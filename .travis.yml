@@ -1,0 +1,8 @@
+language: objective-c
+
+xcode_project: Passcode.xcodeproj
+osx_image: xcode9.2
+env: SCHEME="Passcode"
+
+script:
+  - xcodebuild clean build -project Passcode.xcodeproj -scheme $SCHEME

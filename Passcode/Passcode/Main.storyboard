@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eTl-34-cgZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Passcode View Controller-->
+        <scene sceneID="H45-sn-M14">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="eTl-34-cgZ" customClass="PasscodeViewController" customModule="Passcode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IjS-4i-lAp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQm-78-ZUi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SzI-M3-WzA">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Passcode" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bKP-yE-7P8">
+                                <rect key="frame" x="32.5" y="50" width="310.5" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Zzw-Kh-nZq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qzg-YN-NzF">
+                                <rect key="frame" x="87.5" y="104" width="200" height="44"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FtJ-Tx-wFU" customClass="PasscodeCharacter" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="0s8-UI-bwm"/>
+                                            <constraint firstAttribute="height" constant="44" id="t5u-fI-7TW"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="value" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dz5-fr-FhQ" customClass="PasscodeCharacter" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="0.0" width="50" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Wi6-Yg-Uem"/>
+                                            <constraint firstAttribute="width" constant="50" id="Zic-KC-hEq"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="value" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RoU-Pf-7r2" customClass="PasscodeCharacter" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="0.0" width="50" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="7qO-VY-e9w"/>
+                                            <constraint firstAttribute="height" constant="44" id="hoO-Yh-iQQ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="value" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="064-wL-XV1" customClass="PasscodeCharacter" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="150" y="0.0" width="50" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="QJf-Hl-HCx"/>
+                                            <constraint firstAttribute="height" constant="44" id="erD-hL-HOy"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="value" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="KXM-YK-5l9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="zHB-uE-FMc"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hallo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4Z-Is-p4Z">
+                                <rect key="frame" x="8" y="148" width="359" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="qZo-XV-hRb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBL-ev-8HO">
+                                <rect key="frame" x="0.0" y="170" width="375" height="384"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Min-2Y-Ij1" customClass="NumberButton" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="44" y="10" width="82.5" height="83"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Min-2Y-Ij1" secondAttribute="height" multiplier="1:1" id="Xf6-Ml-Z9z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <state key="normal" title="1"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="1"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressWithButton:" destination="eTl-34-cgZ" eventType="touchUpInside" id="uk3-kk-cPM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBT-Vm-QbI" customClass="NumberButton" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="146.5" y="10" width="83" height="83.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fBT-Vm-QbI" secondAttribute="height" multiplier="1:1" id="kX8-Vz-Lr2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <state key="normal" title="2"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="2"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressWithButton:" destination="eTl-34-cgZ" eventType="touchUpInside" id="XUH-kO-TvE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIY-6T-sM8" customClass="NumberButton" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="249.5" y="10" width="82.5" height="82.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="YIY-6T-sM8" secondAttribute="height" multiplier="1:1" id="HvH-L3-XoO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <state key="normal" title="3"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="3"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressWithButton:" destination="eTl-34-cgZ" eventType="touchUpInside" id="Uru-RR-kHG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wou-2R-Mys" customClass="NumberButton" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="103" width="84" height="83.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Wou-2R-Mys" secondAttribute="height" multiplier="1:1" id="PPx-to-8tF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <state key="normal" title="4"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="4"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressWithButton:" destination="eTl-34-cgZ" eventType="touchUpInside" id="xam-aN-X9T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcG-OU-Z0i" customClass="NumberButton" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="146" y="103.5" width="84" height="83.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zcG-OU-Z0i" secondAttribute="height" multiplier="1:1" id="neN-de-FbS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <state key="normal" title="5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="5"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressWithButton:" destination="eTl-34-cgZ" eventType="touchUpInside" id="5PX-IR-VxB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zM-jT-LfM" customClass="NumberButton" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="250" y="102.5" width="83.5" height="83"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="4zM-jT-LfM" secondAttribute="height" multiplier="1:1" id="zN9-Dq-0nO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <state key="normal" title="6"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="6"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressWithButton:" destination="eTl-34-cgZ" eventType="touchUpInside" id="Aru-wK-chE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTV-2P-4b3" customClass="NumberButton" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="196.5" width="83.5" height="83.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="TTV-2P-4b3" secondAttribute="height" multiplier="1:1" id="pTb-Y3-fj7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <state key="normal" title="7"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="7"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressWithButton:" destination="eTl-34-cgZ" eventType="touchUpInside" id="5uU-6l-yhu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcO-Fv-CnS" customClass="NumberButton" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="146" y="197" width="83.5" height="83.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fcO-Fv-CnS" secondAttribute="height" multiplier="1:1" id="orL-LH-uWP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <state key="normal" title="8"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="8"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressWithButton:" destination="eTl-34-cgZ" eventType="touchUpInside" id="Xjb-i4-SkW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHs-LO-7g6" customClass="NumberButton" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="249.5" y="195.5" width="83.5" height="83.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rHs-LO-7g6" secondAttribute="height" multiplier="1:1" id="fkj-mR-x6q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <state key="normal" title="9"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="9"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressWithButton:" destination="eTl-34-cgZ" eventType="touchUpInside" id="NEF-yF-dBP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xo-3f-gio" customClass="NumberButton" customModule="Passcode" customModuleProvider="target">
+                                        <rect key="frame" x="145.5" y="290.5" width="84.5" height="83.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="6xo-3f-gio" secondAttribute="height" multiplier="1:1" constant="1" id="GeT-ba-IKg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <state key="normal" title="0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressWithButton:" destination="eTl-34-cgZ" eventType="touchUpInside" id="bc8-wX-0rm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5t-j7-oDY">
+                                        <rect key="frame" x="250" y="289" width="84" height="85.5"/>
+                                        <state key="normal" image="delete"/>
+                                        <connections>
+                                            <action selector="didPressWithButton:" destination="eTl-34-cgZ" eventType="touchUpInside" id="kgf-QJ-w1G"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Wou-2R-Mys" firstAttribute="width" secondItem="zcG-OU-Z0i" secondAttribute="width" id="2vN-HN-XSS"/>
+                                    <constraint firstItem="fBT-Vm-QbI" firstAttribute="top" secondItem="fBL-ev-8HO" secondAttribute="top" constant="10" id="2vb-03-fJ9"/>
+                                    <constraint firstItem="fcO-Fv-CnS" firstAttribute="height" secondItem="6xo-3f-gio" secondAttribute="height" id="3i1-KO-bBL"/>
+                                    <constraint firstItem="rHs-LO-7g6" firstAttribute="width" secondItem="fcO-Fv-CnS" secondAttribute="width" id="76O-uc-g5L"/>
+                                    <constraint firstItem="YIY-6T-sM8" firstAttribute="top" secondItem="fBL-ev-8HO" secondAttribute="top" constant="10" id="8sl-GS-Y95"/>
+                                    <constraint firstItem="zcG-OU-Z0i" firstAttribute="top" secondItem="fBT-Vm-QbI" secondAttribute="bottom" constant="10" id="9vf-sE-DDx"/>
+                                    <constraint firstItem="fcO-Fv-CnS" firstAttribute="top" secondItem="zcG-OU-Z0i" secondAttribute="bottom" constant="10" id="ELZ-1b-MfP"/>
+                                    <constraint firstItem="Wou-2R-Mys" firstAttribute="top" secondItem="Min-2Y-Ij1" secondAttribute="bottom" constant="10" id="EcT-yH-uZC"/>
+                                    <constraint firstItem="fcO-Fv-CnS" firstAttribute="centerX" secondItem="fBL-ev-8HO" secondAttribute="centerX" id="H49-vd-k9O"/>
+                                    <constraint firstItem="TTV-2P-4b3" firstAttribute="top" secondItem="Wou-2R-Mys" secondAttribute="bottom" constant="10" id="IXg-e5-rNC"/>
+                                    <constraint firstItem="6xo-3f-gio" firstAttribute="centerX" secondItem="fBL-ev-8HO" secondAttribute="centerX" id="LEh-b9-I1q"/>
+                                    <constraint firstItem="TTV-2P-4b3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fBL-ev-8HO" secondAttribute="leading" constant="16" id="LZ7-Fp-Kko"/>
+                                    <constraint firstItem="4zM-jT-LfM" firstAttribute="width" secondItem="zcG-OU-Z0i" secondAttribute="width" id="NOQ-8t-FnJ"/>
+                                    <constraint firstItem="fBT-Vm-QbI" firstAttribute="centerX" secondItem="fBL-ev-8HO" secondAttribute="centerX" id="PQO-Fy-4u3"/>
+                                    <constraint firstItem="Min-2Y-Ij1" firstAttribute="width" secondItem="fBT-Vm-QbI" secondAttribute="width" id="PSZ-FI-nZm"/>
+                                    <constraint firstItem="TTV-2P-4b3" firstAttribute="width" secondItem="fcO-Fv-CnS" secondAttribute="width" id="RKD-R3-pxX"/>
+                                    <constraint firstItem="G5t-j7-oDY" firstAttribute="leading" secondItem="6xo-3f-gio" secondAttribute="trailing" constant="20" id="RKj-lg-Tok"/>
+                                    <constraint firstItem="fcO-Fv-CnS" firstAttribute="leading" secondItem="TTV-2P-4b3" secondAttribute="trailing" constant="20" id="S5n-M5-LNp"/>
+                                    <constraint firstItem="zcG-OU-Z0i" firstAttribute="leading" secondItem="Wou-2R-Mys" secondAttribute="trailing" constant="20" id="T65-Mq-f1A"/>
+                                    <constraint firstItem="G5t-j7-oDY" firstAttribute="top" secondItem="rHs-LO-7g6" secondAttribute="bottom" constant="10" id="UAE-Bt-bD7"/>
+                                    <constraint firstItem="Wou-2R-Mys" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fBL-ev-8HO" secondAttribute="leading" constant="16" id="UdQ-2Z-MpU"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rHs-LO-7g6" secondAttribute="trailing" constant="16" id="WIU-Gb-mmd"/>
+                                    <constraint firstItem="6xo-3f-gio" firstAttribute="top" secondItem="fcO-Fv-CnS" secondAttribute="bottom" constant="10" id="XSX-8Q-VKt"/>
+                                    <constraint firstItem="zcG-OU-Z0i" firstAttribute="centerX" secondItem="fBL-ev-8HO" secondAttribute="centerX" id="YoQ-hB-NZS"/>
+                                    <constraint firstAttribute="bottom" secondItem="G5t-j7-oDY" secondAttribute="bottom" constant="10" id="b0T-aP-ruR"/>
+                                    <constraint firstItem="YIY-6T-sM8" firstAttribute="leading" secondItem="fBT-Vm-QbI" secondAttribute="trailing" constant="20" id="gtj-cJ-C6f"/>
+                                    <constraint firstItem="Min-2Y-Ij1" firstAttribute="top" secondItem="fBL-ev-8HO" secondAttribute="top" constant="10" id="hWR-5e-lE6"/>
+                                    <constraint firstItem="fBT-Vm-QbI" firstAttribute="leading" secondItem="Min-2Y-Ij1" secondAttribute="trailing" constant="20" id="hrJ-wF-9wh"/>
+                                    <constraint firstItem="fBT-Vm-QbI" firstAttribute="height" secondItem="zcG-OU-Z0i" secondAttribute="height" id="ioZ-DC-iWV"/>
+                                    <constraint firstItem="Min-2Y-Ij1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fBL-ev-8HO" secondAttribute="leading" constant="16" id="j5q-25-E6E"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4zM-jT-LfM" secondAttribute="trailing" constant="16" id="k1C-W6-Qvw"/>
+                                    <constraint firstItem="rHs-LO-7g6" firstAttribute="top" secondItem="4zM-jT-LfM" secondAttribute="bottom" constant="10" id="k8S-oX-Da0"/>
+                                    <constraint firstItem="4zM-jT-LfM" firstAttribute="top" secondItem="YIY-6T-sM8" secondAttribute="bottom" constant="10" id="kMB-Y6-Y1Z"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YIY-6T-sM8" secondAttribute="trailing" constant="16" id="kN8-i8-AH6"/>
+                                    <constraint firstItem="G5t-j7-oDY" firstAttribute="width" secondItem="6xo-3f-gio" secondAttribute="width" id="l96-MO-PeR"/>
+                                    <constraint firstItem="zcG-OU-Z0i" firstAttribute="height" secondItem="fcO-Fv-CnS" secondAttribute="height" id="m7K-Mh-nle"/>
+                                    <constraint firstItem="YIY-6T-sM8" firstAttribute="width" secondItem="fBT-Vm-QbI" secondAttribute="width" id="rrr-zp-gXr"/>
+                                    <constraint firstItem="4zM-jT-LfM" firstAttribute="leading" secondItem="zcG-OU-Z0i" secondAttribute="trailing" constant="20" id="tMa-us-oem"/>
+                                    <constraint firstAttribute="bottom" secondItem="6xo-3f-gio" secondAttribute="bottom" constant="10" id="vlR-6i-YcO"/>
+                                    <constraint firstItem="rHs-LO-7g6" firstAttribute="leading" secondItem="fcO-Fv-CnS" secondAttribute="trailing" constant="20" id="xvr-LW-wXS"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjJ-Fi-aWp">
+                                <rect key="frame" x="32" y="562" width="311" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="nZ4-Wj-bIt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancel:" destination="eTl-34-cgZ" eventType="touchUpInside" id="BNT-kO-fs4"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5B-kl-RJL">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Nja-uv-qpf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Use Biometrics"/>
+                                <connections>
+                                    <action selector="biometrics:" destination="eTl-34-cgZ" eventType="touchUpInside" id="bOw-X7-vrt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hE4-oe-Sau" firstAttribute="trailing" secondItem="a5B-kl-RJL" secondAttribute="trailing" id="0ow-0x-faZ"/>
+                            <constraint firstItem="hE4-oe-Sau" firstAttribute="trailing" secondItem="OjJ-Fi-aWp" secondAttribute="trailing" constant="32" id="4Os-Ud-Lfy"/>
+                            <constraint firstItem="bKP-yE-7P8" firstAttribute="top" secondItem="hE4-oe-Sau" secondAttribute="top" constant="30" id="6Rd-S3-HM1"/>
+                            <constraint firstItem="tQm-78-ZUi" firstAttribute="leading" secondItem="hE4-oe-Sau" secondAttribute="leading" id="8uS-N5-nmE"/>
+                            <constraint firstItem="fBL-ev-8HO" firstAttribute="leading" secondItem="hE4-oe-Sau" secondAttribute="leading" id="Cby-9T-X69"/>
+                            <constraint firstItem="OjJ-Fi-aWp" firstAttribute="leading" secondItem="hE4-oe-Sau" secondAttribute="leading" constant="32" id="Cwj-UT-bAd"/>
+                            <constraint firstItem="OjJ-Fi-aWp" firstAttribute="top" secondItem="fBL-ev-8HO" secondAttribute="bottom" constant="8" id="Dpq-2R-UEh"/>
+                            <constraint firstItem="qzg-YN-NzF" firstAttribute="top" secondItem="bKP-yE-7P8" secondAttribute="bottom" constant="10" id="Luf-SD-ERv"/>
+                            <constraint firstItem="qzg-YN-NzF" firstAttribute="centerX" secondItem="hE4-oe-Sau" secondAttribute="centerX" id="YXh-jx-eba"/>
+                            <constraint firstItem="fBL-ev-8HO" firstAttribute="trailing" secondItem="hE4-oe-Sau" secondAttribute="trailing" id="Yxh-Zn-mIX"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="OjJ-Fi-aWp" secondAttribute="bottom" constant="63" id="Zef-85-NOr"/>
+                            <constraint firstItem="tQm-78-ZUi" firstAttribute="top" secondItem="IjS-4i-lAp" secondAttribute="top" id="bA2-dN-3EG"/>
+                            <constraint firstItem="tQm-78-ZUi" firstAttribute="trailing" secondItem="hE4-oe-Sau" secondAttribute="trailing" id="d4C-4p-ice"/>
+                            <constraint firstItem="hE4-oe-Sau" firstAttribute="bottom" secondItem="a5B-kl-RJL" secondAttribute="bottom" id="gTh-mH-CAU"/>
+                            <constraint firstItem="hE4-oe-Sau" firstAttribute="trailing" secondItem="y4Z-Is-p4Z" secondAttribute="trailing" constant="8" id="gdA-7h-7VV"/>
+                            <constraint firstItem="y4Z-Is-p4Z" firstAttribute="leading" secondItem="hE4-oe-Sau" secondAttribute="leading" constant="8" id="kxR-uC-jEg"/>
+                            <constraint firstItem="bKP-yE-7P8" firstAttribute="leading" secondItem="hE4-oe-Sau" secondAttribute="leading" constant="32" id="lKk-QY-CjA"/>
+                            <constraint firstItem="y4Z-Is-p4Z" firstAttribute="top" secondItem="qzg-YN-NzF" secondAttribute="bottom" id="lul-ui-4VD"/>
+                            <constraint firstItem="hE4-oe-Sau" firstAttribute="trailing" secondItem="bKP-yE-7P8" secondAttribute="trailing" constant="32" id="ruc-AP-eor"/>
+                            <constraint firstItem="a5B-kl-RJL" firstAttribute="leading" secondItem="hE4-oe-Sau" secondAttribute="leading" id="t4k-FU-RDh"/>
+                            <constraint firstAttribute="bottom" secondItem="tQm-78-ZUi" secondAttribute="bottom" id="u7u-6G-XcT"/>
+                            <constraint firstItem="a5B-kl-RJL" firstAttribute="bottom" secondItem="hE4-oe-Sau" secondAttribute="bottom" id="vnp-XM-lTs"/>
+                            <constraint firstItem="fBL-ev-8HO" firstAttribute="top" secondItem="y4Z-Is-p4Z" secondAttribute="bottom" id="xWO-Mt-twy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hE4-oe-Sau"/>
+                    </view>
+                    <connections>
+                        <outlet property="biometricsButton" destination="a5B-kl-RJL" id="V98-A3-byD"/>
+                        <outlet property="blurView" destination="tQm-78-ZUi" id="9kd-sl-HgD"/>
+                        <outlet property="cancelButton" destination="OjJ-Fi-aWp" id="96e-2s-Dqc"/>
+                        <outlet property="codeLabel" destination="bKP-yE-7P8" id="0ir-Ie-Q31"/>
+                        <outlet property="codeReenterLabel" destination="y4Z-Is-p4Z" id="4Jf-oP-aG6"/>
+                        <outlet property="codeView" destination="qzg-YN-NzF" id="g03-8a-OjS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nst-Nx-GQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1938.4000000000001" y="-639.16256157635473"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="delete" width="40" height="30"/>
+    </resources>
+</document>
