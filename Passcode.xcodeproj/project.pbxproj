@@ -17,6 +17,16 @@
 		63B119482024DA060059A369 /* PasscodeCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B119412024DA060059A369 /* PasscodeCharacter.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		63B119802024E2D70059A369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63B1196E2024DB2B0059A369 /* Passcode-Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63B119592024DB2B0059A369;
+			remoteInfo = "Passcode-Example";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		63B1192F2024D9E00059A369 /* Passcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Passcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B119322024D9E00059A369 /* Passcode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Passcode.h; sourceTree = "<group>"; };
@@ -83,6 +93,14 @@
 			path = PasscodeExample;
 			sourceTree = "<group>";
 		};
+		63B1197D2024E2D60059A369 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63B119812024E2D70059A369 /* Passcode-Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -141,12 +159,28 @@
 			mainGroup = 63B119252024D9E00059A369;
 			productRefGroup = 63B119302024D9E00059A369 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 63B1197D2024E2D60059A369 /* Products */;
+					ProjectRef = 63B1196E2024DB2B0059A369 /* Passcode-Example.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				63B1192E2024D9E00059A369 /* Passcode */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		63B119812024E2D70059A369 /* Passcode-Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Passcode-Example.app";
+			remoteRef = 63B119802024E2D70059A369 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		63B1192D2024D9E00059A369 /* Resources */ = {
