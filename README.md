@@ -61,7 +61,7 @@ The default passcode is `1234`
 
 ## Installation
 
-UserDefaults is available through [Carthage](https://github.com/Carthage/Carthage). To install just write into your Cartfile:
+Passcode is available through [Carthage](https://github.com/Carthage/Carthage). To install just write into your Cartfile:
  
 ```
 github "divadretlaw/Passcode"
