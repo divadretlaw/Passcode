@@ -36,6 +36,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="LocalizedText" value="Enter Passcode"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qzg-YN-NzF">
                                 <rect key="frame" x="87.5" y="104" width="200" height="44"/>
@@ -298,6 +301,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Cancel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="LocalizedTitle" value="Cancel"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="cancel:" destination="eTl-34-cgZ" eventType="touchUpInside" id="BNT-kO-fs4"/>
                                 </connections>

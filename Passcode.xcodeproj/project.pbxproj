@@ -15,6 +15,8 @@
 		63B119462024DA060059A369 /* Passcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B1193F2024DA060059A369 /* Passcode.swift */; };
 		63B119472024DA060059A369 /* PasscodeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B119402024DA060059A369 /* PasscodeConfig.swift */; };
 		63B119482024DA060059A369 /* PasscodeCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B119412024DA060059A369 /* PasscodeCharacter.swift */; };
+		63EAF17320250579007A69A7 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAF17220250579007A69A7 /* Localizable.swift */; };
+		63EAF17720250832007A69A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63EAF17920250832007A69A7 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,9 @@
 		63B119402024DA060059A369 /* PasscodeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeConfig.swift; sourceTree = "<group>"; };
 		63B119412024DA060059A369 /* PasscodeCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeCharacter.swift; sourceTree = "<group>"; };
 		63B1196E2024DB2B0059A369 /* Passcode-Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Passcode-Example.xcodeproj"; path = "Example/Passcode-Example.xcodeproj"; sourceTree = "<group>"; };
+		63EAF17220250579007A69A7 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		63EAF17820250832007A69A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		63EAF17A2025085D007A69A7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,8 @@
 				63B1193F2024DA060059A369 /* Passcode.swift */,
 				63B119402024DA060059A369 /* PasscodeConfig.swift */,
 				63B1193B2024DA050059A369 /* PasscodeViewController.swift */,
+				63EAF17220250579007A69A7 /* Localizable.swift */,
+				63EAF17920250832007A69A7 /* Localizable.strings */,
 			);
 			path = Passcode;
 			sourceTree = "<group>";
@@ -155,6 +162,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
 			);
 			mainGroup = 63B119252024D9E00059A369;
 			productRefGroup = 63B119302024D9E00059A369 /* Products */;
@@ -188,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B119442024DA060059A369 /* Media.xcassets in Resources */,
+				63EAF17720250832007A69A7 /* Localizable.strings in Resources */,
 				63B119452024DA060059A369 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,17 +212,31 @@
 				63B119432024DA060059A369 /* NumberButton.swift in Sources */,
 				63B119422024DA060059A369 /* PasscodeViewController.swift in Sources */,
 				63B119482024DA060059A369 /* PasscodeCharacter.swift in Sources */,
+				63EAF17320250579007A69A7 /* Localizable.swift in Sources */,
 				63B119472024DA060059A369 /* PasscodeConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		63EAF17920250832007A69A7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63EAF17820250832007A69A7 /* en */,
+				63EAF17A2025085D007A69A7 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		63B119352024D9E00059A369 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -274,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

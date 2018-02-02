@@ -15,11 +15,6 @@ public struct PasscodeConfig {
     public var autoBiometrics = true
     
     public var reason: String?
-    public var fallback = "Enter Passcode"
-    
-    public var codeText = "Enter Passcode"
-    public var codeNewText = "Enter New Passcode"
-    public var codeReenterText = "Re-enter your new passcode"
     
     public var colors = PasscodeColors(dark: false, mainTint: UIColor(red: 0.0, green: 0.48, blue: 1.0, alpha: 1.0), buttonTint: .black, biometrics: (.white, UIColor(red: 0.0, green: 0.48, blue: 1.0, alpha: 1.0)), text: .black)
     

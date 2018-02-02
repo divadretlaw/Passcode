@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Passcode
+
+  Created by David Walter on 02.02.18.
+  Copyright © 2018 David Walter. All rights reserved.
+*/
+
+"biometricsReasonTouchID" = "Benutze einen Finger um dich zu authentifizieren";
+"biometricsReasonFaceID" = "Benutze dein Gesicht um dich zu authentifizieren";
+"biometricsFallback" = "Passcode eingeben";
+
+"passcodeText" = "Passcode eingeben";
+"passcodeNew" = "Neuen Passcode eingeben";
+"passcodeReenter" = "Passcode erneut eingeben";
+
+"Cancel" = "Abbrechen";

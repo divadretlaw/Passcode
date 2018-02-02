@@ -98,17 +98,17 @@ class PasscodeViewController: UIViewController {
         
         switch type {
         case .changeCode:
-            self.codeLabel.text = self.config.codeNewText
+            self.codeLabel.text = Localized("passcodeNew")
         case .askCode:
-            self.codeLabel.text = self.config.codeText
+            self.codeLabel.text = Localized("passcodeText")
         default:
-            self.codeLabel.text = self.config.codeText
+            self.codeLabel.text = Localized("passcodeText")
             self.cancelButton.isHidden = true
             self.biometricsButton.isHidden = !self.config.biometricsGetter()
         }
         
         // Config
-        self.codeReenterLabel.text = self.config.codeReenterText
+        self.codeReenterLabel.text = Localized("passcodeReenter")
         self.biometricsButton.setTitle(self.config.biometrics, for: .normal)
         
         // Colors
@@ -188,7 +188,7 @@ class PasscodeViewController: UIViewController {
         guard self.config.foreground, !self.biometricsButton.isHidden, self.config.autoBiometrics else { return }
         
         let context = LAContext()
-        context.localizedFallbackTitle = self.config.fallback
+        context.localizedFallbackTitle = Localized("biometricsFallback")
         var error: NSError?
         
         guard context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error),

@@ -39,10 +39,10 @@ public class Passcode {
             switch context.biometryType {
             case .faceID:
                 self.config.biometricsString = "Face ID"
-                self.config.reason = "Use your face to authenticate"
+                self.config.reason = Localized("biometricsReasonFaceID")
             case .touchID:
                 self.config.biometricsString = "Touch ID"
-                self.config.reason = "Place your finger to authenticate"
+                self.config.reason = Localized("biometricsReasonTouchID")
             default:
                 break
             }
