@@ -1,9 +1,4 @@
-# Passcode
-
-[![Platforms](https://img.shields.io/travis/divadretlaw/Passcode.svg?style=flat-square)](https://travis-ci.org/divadretlaw/Passcode)
-[![Carthage](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage)
-[![Swift](https://img.shields.io/badge/swift-4.0-orange.svg?style=flat-square)](https://swift.org)
-[![License](https://img.shields.io/github/license/divadretlaw/Passcode.svg?style=flat-square)](LICENSE)
+# Passcode [![Platforms](https://img.shields.io/travis/divadretlaw/Passcode.svg?style=flat-square)](https://travis-ci.org/divadretlaw/Passcode) [![Carthage](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage) [![Swift](https://img.shields.io/badge/swift-4.0-orange.svg?style=flat-square)](https://swift.org) [![License](https://img.shields.io/github/license/divadretlaw/Passcode.svg?style=flat-square)](LICENSE)
 
 ## Usage
 
