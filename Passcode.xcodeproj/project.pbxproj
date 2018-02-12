@@ -16,7 +16,7 @@
 		63B119472024DA060059A369 /* PasscodeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B119402024DA060059A369 /* PasscodeConfig.swift */; };
 		63B119482024DA060059A369 /* PasscodeCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B119412024DA060059A369 /* PasscodeCharacter.swift */; };
 		63EAF17320250579007A69A7 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAF17220250579007A69A7 /* Localizable.swift */; };
-		63EAF17720250832007A69A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63EAF17920250832007A69A7 /* Localizable.strings */; };
+		63EAF17720250832007A69A7 /* Passcode.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63EAF17920250832007A69A7 /* Passcode.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,8 @@
 		63B119412024DA060059A369 /* PasscodeCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeCharacter.swift; sourceTree = "<group>"; };
 		63B1196E2024DB2B0059A369 /* Passcode-Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Passcode-Example.xcodeproj"; path = "Example/Passcode-Example.xcodeproj"; sourceTree = "<group>"; };
 		63EAF17220250579007A69A7 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
-		63EAF17820250832007A69A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		63EAF17A2025085D007A69A7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		63EAF17820250832007A69A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Passcode.strings; sourceTree = "<group>"; };
+		63EAF17A2025085D007A69A7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Passcode.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 				63B119402024DA060059A369 /* PasscodeConfig.swift */,
 				63B1193B2024DA050059A369 /* PasscodeViewController.swift */,
 				63EAF17220250579007A69A7 /* Localizable.swift */,
-				63EAF17920250832007A69A7 /* Localizable.strings */,
+				63EAF17920250832007A69A7 /* Passcode.strings */,
 			);
 			path = Passcode;
 			sourceTree = "<group>";
@@ -196,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B119442024DA060059A369 /* Media.xcassets in Resources */,
-				63EAF17720250832007A69A7 /* Localizable.strings in Resources */,
+				63EAF17720250832007A69A7 /* Passcode.strings in Resources */,
 				63B119452024DA060059A369 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,13 +220,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		63EAF17920250832007A69A7 /* Localizable.strings */ = {
+		63EAF17920250832007A69A7 /* Passcode.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				63EAF17820250832007A69A7 /* en */,
 				63EAF17A2025085D007A69A7 /* de */,
 			);
-			name = Localizable.strings;
+			name = Passcode.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

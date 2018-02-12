@@ -9,7 +9,10 @@
 import UIKit
 
 func Localized(_ key: String, comment: String = "") -> String {
-    return NSLocalizedString(key, tableName: "Localizable", bundle: Bundle(for: Passcode.self), comment: comment)
+    let bundle = Bundle.main.path(forResource: "Passcode", ofType: "strings") != nil
+        ? Bundle.main : Bundle(for: Passcode.self)
+    
+    return NSLocalizedString(key, tableName: "Passcode", bundle: bundle, comment: comment)
 }
 
 extension UILabel {
