@@ -89,7 +89,7 @@ class PasscodeViewController: UIViewController {
         default:
             self.codeLabel.text = Localized("passcodeText")
             self.cancelButton.isHidden = true
-            self.biometricsButton.isHidden = self.config.biometricsGetter()
+            self.biometricsButton.isHidden = !self.config.biometricsGetter()
         }
         
         // Config
