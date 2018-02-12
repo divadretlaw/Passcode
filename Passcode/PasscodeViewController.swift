@@ -16,22 +16,6 @@ public enum PasscodeType {
     case changeCode
 }
 
-public struct PasscodeColors {
-    public var mainTint: UIColor
-    public var buttonTint: UIColor
-    public var biometrics: (UIColor, UIColor)
-    public var text: UIColor
-    public var dark: Bool
-    
-    public init(dark: Bool, mainTint: UIColor, buttonTint: UIColor? = nil, biometrics: (UIColor, UIColor)? = nil, text: UIColor) {
-        self.mainTint = mainTint
-        self.buttonTint = buttonTint ?? mainTint
-        self.biometrics = biometrics ?? (text, mainTint)
-        self.text = text
-        self.dark = dark
-    }
-}
-
 class PasscodeViewController: UIViewController {
     
     var config: PasscodeConfig!
@@ -41,6 +25,7 @@ class PasscodeViewController: UIViewController {
     var code = "" {
         didSet {
             var count = 0
+            
             for view in self.codeView.arrangedSubviews {
                 if let view = view as? PasscodeCharacter {
                     view.value = count < code.count
@@ -52,7 +37,7 @@ class PasscodeViewController: UIViewController {
             
             switch type {
             case .authenticate, .askCode:
-                if code == self.config.passcodeGetter?() {
+                if code == self.config.passcodeGetter() {
                     self.dismiss(success: true)
                 } else {
                     self.displayError()
@@ -65,7 +50,7 @@ class PasscodeViewController: UIViewController {
                     return
                 } else {
                     if compareCode == code {
-                        self.config.passcodeSetter?(code)
+                        self.config.passcodeSetter(code)
                         self.dismiss(success: true)
                     } else {
                         self.displayError()
@@ -104,7 +89,7 @@ class PasscodeViewController: UIViewController {
         default:
             self.codeLabel.text = Localized("passcodeText")
             self.cancelButton.isHidden = true
-            self.biometricsButton.isHidden = !self.config.biometricsGetter()
+            self.biometricsButton.isHidden = self.config.biometricsGetter()
         }
         
         // Config
@@ -193,9 +178,9 @@ class PasscodeViewController: UIViewController {
         
         guard context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error),
         let reason = self.config.reason else {
-            let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+            let alert = UIAlertController(title: Localized("Error"), message: error?.localizedDescription, preferredStyle: .alert)
             alert.view.tintColor = self.config.colors.mainTint
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in }))
+            alert.addAction(UIAlertAction(title: Localized("OK"), style: .cancel, handler: { _ in }))
             self.present(alert, animated: true)
             return
         }

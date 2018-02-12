@@ -16,29 +16,17 @@ func Localized(_ key: String, comment: String = "") -> String {
 }
 
 extension UILabel {
-    
     @IBInspectable
     public var LocalizedText: String {
-        get {
-            return ""
-        }
-        set {
-            self.text = Localized(newValue)
-        }
+        get { return "" }
+        set { self.text = Localized(newValue) }
     }
-    
 }
 
 extension UIButton {
-    
     @IBInspectable
     public var LocalizedTitle: String {
-        get {
-            return ""
-        }
-        set {
-            self.setTitle(Localized(newValue), for: .normal)
-        }
+        get { return "" }
+        set { self.setTitle(Localized(newValue), for: .normal) }
     }
-    
 }

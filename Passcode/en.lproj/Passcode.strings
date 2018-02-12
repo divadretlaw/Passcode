@@ -14,4 +14,6 @@
 "passcodeNew" = "Enter New Passcode";
 "passcodeReenter" = "Re-enter your new passcode";
 
+"OK" = "OK";
+"Error" = "Error";
 "Cancel" = "Cancel";
