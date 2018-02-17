@@ -141,13 +141,15 @@ class PasscodeViewController: UIViewController {
     func displayError() {
         self.view.isUserInteractionEnabled = false
         let animation = CABasicAnimation(keyPath: "position")
-        animation.duration = 0.15
         animation.autoreverses = true
+        animation.duration = 0.1
+        animation.isRemovedOnCompletion = true
+        animation.repeatCount = 2
         animation.fromValue = NSValue(cgPoint: CGPoint(x: self.codeView.center.x - 10, y: self.codeView.center.y))
         animation.toValue = NSValue(cgPoint: CGPoint(x: self.codeView.center.x + 10, y: self.codeView.center.y))
         
-        self.codeView.layer.add(animation, forKey: "position")
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + animation.duration * 2.5) {
+        self.codeView.layer.add(animation, forKey: animation.keyPath)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + animation.duration * Double(animation.repeatCount + 1)) {
             self.code = ""
             self.view.isUserInteractionEnabled = true
         }
