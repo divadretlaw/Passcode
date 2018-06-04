@@ -118,7 +118,9 @@ class PasscodeViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.biometrics()
+		if self.config.autoBiometrics {
+        	self.biometrics()
+		}
     }
     
     // MARK: - Helpers
@@ -172,7 +174,7 @@ class PasscodeViewController: UIViewController {
     }
     
     @IBAction func biometrics(_ sender: AnyObject? = nil) {
-        guard self.config.foreground, !self.biometricsButton.isHidden, self.config.autoBiometrics else { return }
+        guard self.config.foreground, !self.biometricsButton.isHidden else { return }
         
         let context = LAContext()
         context.localizedFallbackTitle = Localized("biometricsFallback")
