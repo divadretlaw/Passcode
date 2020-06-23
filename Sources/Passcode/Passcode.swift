@@ -19,7 +19,7 @@ public class Passcode {
     private lazy var passcodeWindow: UIWindow = {
         let window = UIWindow(frame: UIScreen.main.bounds)
         
-        window.windowLevel = 0
+        window.windowLevel = UIWindow.Level(rawValue: 0)
         window.makeKeyAndVisible()
         
         return window
@@ -29,8 +29,8 @@ public class Passcode {
         self.appDelegateWindow = window
         self.config = config
         
-        NotificationCenter.default.addObserver(self, selector: #selector(self.willEnterForeground), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.didEnterBackground), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.willEnterForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.didEnterBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)
         
         let context = LAContext()
         var error: NSError?
@@ -67,7 +67,7 @@ public class Passcode {
         
         viewController.dismissCompletion = { [weak self] in self?.dismiss() }
         
-        passcodeWindow.windowLevel = 2
+        passcodeWindow.windowLevel = UIWindow.Level(rawValue: 2)
         passcodeWindow.rootViewController = viewController
         
         self.isPresented = true
@@ -121,7 +121,7 @@ public class Passcode {
     private func dismiss(animated: Bool = true) {
         DispatchQueue.main.async {
             self.isPresented = false
-            self.appDelegateWindow?.windowLevel = 1
+            self.appDelegateWindow?.windowLevel = UIWindow.Level(rawValue: 1)
             self.appDelegateWindow?.makeKeyAndVisible()
             
             UIView.animate(
@@ -134,7 +134,7 @@ public class Passcode {
                     self?.passcodeWindow.alpha = 0
                 },
                 completion: { [weak self] _ in
-                    self?.passcodeWindow.windowLevel = 0
+                    self?.passcodeWindow.windowLevel = UIWindow.Level(rawValue: 0)
                     self?.passcodeWindow.rootViewController = nil
                     self?.passcodeWindow.alpha = 1
                 }
